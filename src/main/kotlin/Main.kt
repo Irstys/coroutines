@@ -30,7 +30,6 @@ fun main() {
                 val posts = getPosts(client)
                     .map { post ->
                         async {
-                            //
                             PostWithComments(
                                 post,
                                 getAuthor(client, post.authorId),
